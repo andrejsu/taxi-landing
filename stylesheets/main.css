@@ -1,0 +1,211 @@
+body {
+  font-family: "Heebo", sans-serif;
+  color: #3E4958 !important;
+}
+
+.menu-link {
+  font-family: "Heebo", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  color: #3E4958 !important;
+}
+.menu-link:hover {
+  color: #FDC501 !important;
+}
+
+.active {
+  color: #FDC501 !important;
+}
+
+.phone {
+  display: block;
+  margin-top: 20px;
+  font-family: "Heebo", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 26.44px;
+  color: #3E4958 !important;
+}
+.phone::before {
+  content: "";
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  margin-right: 13px;
+  vertical-align: middle;
+  background-image: url("../img/phone-icon.svg");
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.slogans {
+  background-image: url("../img/header-bg.png");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  padding-top: 75px;
+  padding-bottom: 325px;
+}
+.slogans > div > p:first-child {
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 40px;
+  color: white;
+}
+.slogans > div > p:first-child + p {
+  font-size: 54px;
+  font-weight: 700;
+  line-height: 70px;
+  color: #FDC501;
+}
+.slogans > div > p:first-child + p + p {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  color: white;
+}
+
+@media (min-width: 992px) {
+  .slogans {
+    padding-top: 175px;
+  }
+  .slogans > div > p:first-child {
+    font-size: 48px;
+    line-height: 70.5px;
+  }
+  .slogans > div > p:first-child + p {
+    font-size: 72px;
+    line-height: 105.75px;
+  }
+  .slogans > div > p:first-child + p + p {
+    font-size: 24px;
+    line-height: 35.25px;
+  }
+
+  .phone {
+    margin-top: 0;
+  }
+}
+.order-form {
+  width: calc(100% - 10vw);
+  margin-top: -250px;
+  background-color: #FFFFFF;
+  box-shadow: 0px 0px 40px 10px rgba(0, 0, 0, 0.05);
+}
+.order-form > div > button {
+  width: 250px;
+  height: 60px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  color: #FFFFFF;
+  border: none;
+  background-color: #FDC501;
+}
+.order-form > div > button:hover {
+  border: 1px solid #FDC501;
+  background-color: #FFFFFF;
+  color: #FDC501;
+}
+
+.fieldset > div {
+  position: relative;
+}
+.fieldset > div img {
+  position: absolute;
+  top: 50%;
+  left: 25px;
+  margin-top: -10px;
+}
+.fieldset > div input {
+  color: rgba(62, 73, 88, 0.6);
+}
+.fieldset > div .select {
+  appearance: none;
+  background-image: url("../img/arrow-icon.svg");
+  background-repeat: no-repeat;
+  background-size: 20px 20px;
+  background-position: right 13px center;
+}
+.fieldset > div input, .fieldset > div select {
+  height: 60px;
+  padding-left: 55px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 26px;
+  display: flex;
+  align-items: center;
+  background: #F8F9F9;
+  border: 1px solid #EBECED;
+  border-radius: 1px;
+}
+.fieldset > div input:focus, .fieldset > div select:focus {
+  background-color: #FFFFFF;
+}
+
+.cards {
+  padding-top: 100px;
+  padding-bottom: 60px;
+  background-image: none;
+}
+
+.cards > div > h2 {
+  margin-top: 0;
+  margin-bottom: 60px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 70px;
+  text-align: center;
+}
+
+.cards-list > div > div {
+  width: 100%;
+  background-color: #FFFFFF;
+  box-shadow: 0px 0px 40px 10px rgba(0, 0, 0, 0.05);
+}
+.cards-list > div > div > div > h3 {
+  margin: 0;
+  margin-top: 40px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 44px;
+}
+.cards-list > div > div > div > p {
+  margin: 0;
+  margin-top: 20px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+  text-align: center;
+}
+.cards-list > div > div > div > p.price {
+  margin: 0;
+  margin-top: 30px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 70px;
+  color: #FDC501;
+}
+.cards-list > div > div > div > p.price > span {
+  font-size: 24px;
+  line-height: 35px;
+}
+
+@media (min-width: 768px) {
+  .cards {
+    background-image: url("../img/cards-bg.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
