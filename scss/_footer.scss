@@ -1,0 +1,28 @@
+.footer {
+  display: flex;
+  padding: 15px 130px 30px;
+  justify-content: space-between;
+  align-content: center;
+}
+
+.footer > ul {
+  display: flex;
+
+  & > li {
+    & > a, a:hover, a:focus, a:active {
+      text-decoration: none;
+      margin-right: 30px;
+
+      font-style: normal;
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 26px;
+
+      color: $text-color
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}

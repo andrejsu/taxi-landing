@@ -1,0 +1,75 @@
+.order-form {
+  width: calc(100% - 10vw);
+  margin-top: -250px;
+
+  background-color: $main-color;
+  box-shadow: 0px 0px 40px 10px rgba(0, 0, 0, 0.05);
+
+  & > div > button {
+    width: 250px;
+    height: 60px;
+
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    color: $main-color;
+
+    border: none;
+    background-color: $accent-color;
+
+    &:hover {
+      border: 1px solid $accent-color;
+      background-color: $main-color;
+      color: $accent-color;
+    }
+  }
+}
+
+.fieldset {
+  & > div {
+    position: relative;
+
+    & img {
+      position: absolute;
+      top: 50%;
+      left: 25px;
+  
+      margin-top: -10px;
+    }
+  
+    & input {
+      color: rgba(62, 73, 88, 0.6);
+    }
+  
+    & .select {  
+      appearance: none;
+  
+      background-image: url("../img/arrow-icon.svg");
+      background-repeat: no-repeat;
+      background-size: 20px 20px;
+      background-position: right 13px center;
+    }
+  
+    & input, select {
+      height: 60px;
+      padding-left: 55px;
+  
+      font-style: normal;
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 26px;
+      display: flex;
+      align-items: center;
+  
+      background: #F8F9F9;
+      border: 1px solid #EBECED;
+      border-radius: 1px;
+  
+      &:focus {
+        background-color: $main-color;
+      }
+    }
+  }
+}

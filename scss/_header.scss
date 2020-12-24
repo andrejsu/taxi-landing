@@ -1,0 +1,102 @@
+.menu-link {
+  font-family: "Heebo", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  color: $text-color !important;
+
+  &:hover {
+    color: $accent-color !important;
+  }
+}
+
+.active {
+  color: $accent-color !important;
+}
+
+.phone {
+  display: block;
+
+  margin-top: 20px;
+
+  font-family: "Heebo", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 26.44px;
+  color: $text-color !important;
+
+  &::before {
+      content: "";
+      
+      display: inline-block;
+      width: 30px;
+      height: 30px;
+      margin-right: 13px;
+
+      vertical-align: middle;
+
+      background-image: url("../img/phone-icon.svg");
+      background-size: contain;
+      background-position: center center;
+      background-repeat: no-repeat;
+  }
+}
+
+.slogans {
+  background-image: url("../img/header-bg.png");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+
+  padding-top: 75px;
+  padding-bottom: 325px;
+
+  & > div > p {
+    &:first-child {  
+      font-size: 36px;
+      font-weight: 400;
+      line-height: 40px;
+      color:white;
+    
+      & + p {
+          font-size: 54px;
+          font-weight: 700;
+          line-height: 70px;
+          color: $accent-color;
+    
+          & + p {
+              font-size: 20px;
+              font-weight: 400;
+              line-height: 30px;
+              color: white;
+          }
+      }
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  .slogans {
+    padding-top: 175px;
+    
+    & > div > p {
+      &:first-child {  
+        font-size: 48px;
+        line-height: 70.5px;
+      
+        & + p {
+          font-size: 72px;
+          line-height: 105.75px;
+          
+          & + p {
+            font-size: 24px;
+            line-height: 35.25px;
+          }
+        }
+      }
+    }
+  }
+
+  .phone {
+    margin-top: 0;
+  }
+}
